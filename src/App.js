@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faCalendar, faEnvelope, faMapMarkerAlt, faMobileAlt, faUniversity } from '@fortawesome/free-solid-svg-icons'
 
-export default () => {
+const App = () => {
 
 	useEffect(() => {
 		var canvas = $('#canvas')[0];
@@ -117,7 +117,7 @@ export default () => {
 		}
 	
 		function TrimHex(hex) {
-			return (hex.charAt(0) == "#") ? hex.substring(1, 7) : hex;
+			return (hex.charAt(0) === "#") ? hex.substring(1, 7) : hex;
 		}
 	
 		$(window).resize(function() {
@@ -140,9 +140,9 @@ export default () => {
 						<h4 className='mb-3'><Badge variant='info' className='font-weight-light'>Administración de Empresas <br/> UDEP</Badge></h4>
 
 						<div className='d-flex justify-content-center mb-4'>
-							<a href='#' className='link-dark'><FontAwesomeIcon size='lg' icon={faFacebook} className='mx-2'/></a>
-							<a href='#' className='link-dark'><FontAwesomeIcon size='lg' icon={faInstagram} className='mx-2'/></a>
-							<a href='#' className='link-dark'><FontAwesomeIcon size='lg' icon={faWhatsapp} className='mx-2'/></a>
+							<a href='/#' className='link-dark'><FontAwesomeIcon size='lg' icon={faFacebook} className='mx-2'/></a>
+							<a href='/#' className='link-dark'><FontAwesomeIcon size='lg' icon={faInstagram} className='mx-2'/></a>
+							<a href='/#' className='link-dark'><FontAwesomeIcon size='lg' icon={faWhatsapp} className='mx-2'/></a>
 						</div>
 
 						<div className='bg-dark w-100 h-100 rounded-bottom text-light p-4'>
@@ -154,7 +154,7 @@ export default () => {
 									<FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2'/> Lima, Peru
 								</li>
 								<li>
-									<FontAwesomeIcon icon={faEnvelope} className='mr-2'/> <a href='#'>vmhs1998@gmail.com</a>
+									<FontAwesomeIcon icon={faEnvelope} className='mr-2'/> <a href='/#'>vmhs1998@gmail.com</a>
 								</li>
 								<li>
 									<FontAwesomeIcon icon={faMobileAlt} className='mr-2'/> +51 0987 11080
@@ -192,7 +192,7 @@ export default () => {
 							<Row xs={1} lg={2} className='text-dark'>
 								<Col className='mb-3'>
 									<Card className='p-3 d-flex flex-row'>
-										<img src={ComandappLogo} width='50px' height='50px' className='mr-3'/>
+										<img src={ComandappLogo} width='50px' height='50px' className='mr-3' alt='comandapp'/>
 										<div>
 											<h5 className='font-weight-bold mb-0'>Comandapp</h5>
 											<p className='small'>Facturación electrónica para tu restaurante. Potente y fácil de usar.</p>
@@ -201,7 +201,7 @@ export default () => {
 								</Col>
 								<Col className='mb-3'>
 									<Card className='p-3 d-flex flex-row'>
-										<img src={Terminal} width='65px' height='auto' className='mr-1'/>
+										<img src={Terminal} width='65px' height='auto' className='mr-1' alt='terminal'/>
 										<div>
 											<h5 className='font-weight-bold mb-0'>Terminal Fusion</h5>
 											<p className='small'>Pide atraves de la web.</p>
@@ -216,3 +216,5 @@ export default () => {
 		</Container>
   	)
 }
+
+export default App
