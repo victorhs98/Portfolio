@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import $ from 'jquery'
-import { Link } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -164,7 +163,7 @@ const App = () => {
 									<FontAwesomeIcon icon={faUniversity} className='mr-2'/> Universidad de Piura
 								</li>
 							</ul>
-							<Button as={Link} to='/cv.docx' variant='info' className='rounded-pill mt-3' size='lg' block>Descargar CV</Button>
+							<Button as='a' href='/cv.docx' variant='info' className='rounded-pill mt-3' size='lg' block download>Descargar CV</Button>
 						</div>
 					</Card>
 				</Col>
