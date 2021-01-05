@@ -13,7 +13,7 @@ import ComandappLogo from './assets/img/comandappIcon.png'
 import Terminal from './assets/img/terminal.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCalendar, faEnvelope, faMapMarkerAlt, faMobileAlt, faUniversity } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
@@ -140,9 +140,8 @@ const App = () => {
 						<h4 className='mb-3'><Badge variant='info' className='font-weight-light'>Administración de Empresas <br/> UDEP</Badge></h4>
 
 						<div className='d-flex justify-content-center mb-4'>
-							<a href='/#' className='link-dark'><FontAwesomeIcon size='lg' icon={faFacebook} className='mx-2'/></a>
-							<a href='/#' className='link-dark'><FontAwesomeIcon size='lg' icon={faInstagram} className='mx-2'/></a>
-							<a href='/#' className='link-dark'><FontAwesomeIcon size='lg' icon={faWhatsapp} className='mx-2'/></a>
+							<a href='https://www.linkedin.com/in/victor-helguero-8807a3143/' className='link-dark'><FontAwesomeIcon size='lg' icon={faLinkedin} className='mx-2'/></a>
+							<a href='https://wa.me/+51098711080' className='link-dark'><FontAwesomeIcon size='lg' icon={faWhatsapp} className='mx-2'/></a>
 						</div>
 
 						<div className='bg-dark w-100 h-100 rounded-bottom text-light p-4'>
@@ -154,7 +153,7 @@ const App = () => {
 									<FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2'/> Lima, Peru
 								</li>
 								<li>
-									<FontAwesomeIcon icon={faEnvelope} className='mr-2'/> <a href='/#'>vmhs1998@gmail.com</a>
+									<FontAwesomeIcon icon={faEnvelope} className='mr-2'/> <a href='mailto:vmhs1998@gmail.com'>vmhs1998@gmail.com</a>
 								</li>
 								<li>
 									<FontAwesomeIcon icon={faMobileAlt} className='mr-2'/> +51 0987 11080
@@ -195,16 +194,17 @@ const App = () => {
 										<img src={ComandappLogo} width='50px' height='50px' className='mr-3' alt='comandapp'/>
 										<div>
 											<h5 className='font-weight-bold mb-0'>Comandapp</h5>
-											<p className='small'>Facturación electrónica para tu restaurante. Potente y fácil de usar.</p>
+											<p className='small mb-0'>Facturación electrónica para tu restaurante. Potente y fácil de usar.</p>
+											<a className='link-dark float-right' href="https://comandapp.pe/">Ver</a>
 										</div>
 									</Card>
 								</Col>
 								<Col className='mb-3'>
 									<Card className='p-3 d-flex flex-row'>
-										<img src={Terminal} width='65px' height='auto' className='mr-1' alt='terminal'/>
 										<div>
-											<h5 className='font-weight-bold mb-0'>Terminal Fusion</h5>
-											<p className='small'>Pide atraves de la web.</p>
+											<h5 className='font-weight-bold mb-0'>Pagina Web Terminal Fusion</h5>
+											<p className='small mb-0'>Pide atraves de la web.</p>
+											<a className='link-dark float-right' href="https://www.terminalfusion.rest/">Ver</a>
 										</div>
 									</Card>
 								</Col>
