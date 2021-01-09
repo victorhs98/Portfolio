@@ -10,10 +10,9 @@ import { Container, Card, Col, Row, Image, Badge, Button } from 'react-bootstrap
 
 import Profile from './assets/img/profile.jpg'
 import ComandappLogo from './assets/img/comandappIcon.png'
-import Terminal from './assets/img/terminal.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCalendar, faEnvelope, faMapMarkerAlt, faMobileAlt, faUniversity } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
