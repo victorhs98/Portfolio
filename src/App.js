@@ -23,6 +23,7 @@ const App = () => {
 
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
+		
 
 		var Dots = [];
 		var colors = ['#FF9900', '#424242', '#BCBCBC', '#3299BB'];
