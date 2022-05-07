@@ -170,7 +170,7 @@ const App = () => {
 									</li>
 								</ul>
 								<div className='d-flex justify-content-center mt-4'>
-									<Button as='a' href='/cv.docx' variant='info' size='lg' block download className='text-light'>Descargar CV</Button>
+									<Button as='a' href='/cv.pdf' variant='info' size='lg' block download className='text-light'>Descargar CV</Button>
 								</div>
 							</div>
 						</Card>
